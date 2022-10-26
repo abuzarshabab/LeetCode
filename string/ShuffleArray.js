@@ -4,10 +4,9 @@
  * @return {string}
  */
  var restoreString = function(s, indices) {
-  let shuffledString = ''
-  for(let iterator = 0; iterator < indices.length; iterator++) {
-      shuffledString = shuffledString + s[indices[iterator]]
-      console.log(indices[iterator])
-  }
+  let shuffledString = [];
+  for(let i = 0; i < indices.length; i++) {
+      shuffledString[indices[i]] = s[i]
+  }    
   return shuffledString
 };
